@@ -16,26 +16,26 @@ body{
     width: 100%;
     margin: 0;
     font-family:Raleway;
-    padding:70px 0;
+    padding:30px 0;
     font-size:22px;
     margin-inline-end:0;
     background:#00ff85;
     background:linear-gradient(180deg, #00c2ff 0, #00ff85 100%, #00ff85 150%);
-    text-align:center
+    text-align:center;
 }
 a{
-    display:block
+    display:block;
 }
 h1{
-    color:#fff;
+    color:#ffffff;
     font-size: 72px;
-    font-weight: 900
+    font-weight: 900;
 }
 h2{
-    color:#fff
+    color:#ffffff;
 }
 .btn{
-    color:#fff;
+    color:#ffffff;
     width:380px;
     display: inline-block !important;
     background:#000;
@@ -51,7 +51,7 @@ h2{
     text-decoration:unset!important;
     outline:0;
     font-size:21px;
-    font-weight: 800
+    font-weight: 800;
 }
 a{
     position:relative;
@@ -60,94 +60,130 @@ a{
     padding-right:32px;
     letter-spacing:1px;
     font-size:18px;
-    margin-bottom:6px!important
+    margin-bottom:6px!important;
 }
 :hover:after{
-    color:#98fb98
+    color:#98fb98;
 }
 i{
-    color:#fff
+    color:#ffffff;
 }
 .bitcoin-label{
-    background-color:#f7931a
+    background-color:#f7931a;
 }
 .bitcoin-label:after{
-    content:' Bitcoin'
+    content:' Bitcoin';
 }
 .bitcoin-label:hover:after{
-    content:' Click to copy'
+    content:' Click to open';
 }
 .email-label{
-    background-color:#2e8b57
+    background-color:#2e8b57;
 }
 .email-label:after{
-    content:' Mail'
+    content:' Mail';
 }
 .email-label:hover:after{
-    content:' admin@namazso.eu'
+    content:' admin@namazso.eu';
 }
 .github-label{
-    background-color:#000
+    background-color:#000000;
 }
 .github-label:after{
-    content:' GitHub'
+    content:' GitHub';
 }
 .github-label:hover:after{
-    content:' namazso'
+    content:' namazso';
 }
 .twitter-label{
-    background-color: #1da1f2
+    background-color: #1da1f2;
 }
 .twitter-label:after{
-    content:' Twitter'
+    content:' Twitter';
 }
 .twitter-label:hover:after{
-    content:' @namazso'
+    content:' @namazso';
 }
 .monero-label{
-    background-color: #f26822
+    background-color: #f26822;
 }
 .monero-label:after{
-    content:' Monero'
+    content:' Monero';
 }
 .monero-label:hover:after{
-    content:' Click to copy'
+    content:' Click to copy';
 }
 .matrix-label{
-    background-color: #292929
+    background-color: #292929;
 }
 .matrix-label:after{
-    content:' Matrix'
+    content:' Matrix';
 }
 .matrix-label:hover:after{
-    content:' @namazso:namazso.eu'
+    content:' @namazso:namazso.eu';
 }
 .keybase-label{
-    background-color: #3663ea
+    background-color: #3663ea;
 }
 .keybase-label:after{
-    content:' Keybase'
+    content:' Keybase';
 }
 .keybase-label:hover:after{
-    content:' namazso'
+    content:' namazso';
 }
 .reddit-label{
     background-color: #ff5700;
 }
 .reddit-label:after{
-    content:' Reddit'
+    content:' Reddit';
 }
 .reddit-label:hover:after{
-    content:' namazso'
+    content:' namazso';
 }
 .pgp-label{
     background-color: #0093dd;
 }
 .pgp-label:after{
-    content:' PGP'
+    content:' PGP';
 }
 .pgp-label:hover:after{
-    content:' 8778 6B14 FD6B FE40'
+    content:' 8778 6B14 FD6B FE40';
+}
+.invidious-label{
+    background-color: #e52d27;
+}
+.invidious-label:after{
+    content:' Invidious';
+}
+.invidious-label:hover:after{
+    content:' invidious.namazso.eu';
+}
+.nitter-label{
+    background-color: #1da1f2;
+}
+.nitter-label:after{
+    content:' Nitter';
+}
+.nitter-label:hover:after{
+    content:' nitter.namazso.eu';
+}
+.teddit-label{
+    background-color: #ff5700;
+}
+.teddit-label:after{
+    content:' Teddit';
+}
+.teddit-label:hover:after{
+    content:' teddit.namazso.eu';
+}
+.lufi-label{
+    background-color: #00BCD4;
+}
+.lufi-label:after{
+    content:' Lufi';
+}
+.lufi-label:hover:after{
+    content:' lufi.namazso.eu';
 }
 		</style>
 	</head>
@@ -160,11 +196,16 @@ i{
 			<a class="btn twitter-label" href="https://twitter.com/namazso" class="twitter-follow-button"><i class="fa fa-twitter"></i></a><br/>
 			<a class="btn matrix-label" href="https://matrix.to/#/@namazso:namazso.eu"><i class="fa fa-matrix-org"></i></a><br/>
 			<a class="btn email-label" href="mailto:admin@namazso.eu"><i class="fa fa-envelope"></i></a><br/>
-			<a class="btn bitcoin-label" href="javascript:navigator.clipboard.writeText('1N6UzYgzn3sLV33hB2iS3FvYLzD1G4CuS2')"><i class="fa fa-bitcoin"></i></a><br/>
+			<a class="btn bitcoin-label" href="bitcoin:1N6UzYgzn3sLV33hB2iS3FvYLzD1G4CuS2"><i class="fa fa-bitcoin"></i></a><br/>
 			<!--<a class="btn monero-label" href="javascript:navigator.clipboard.writeText('83sJ6GoeKf1U47vD9Tk6y2MEKJKxPJkECG3Ms7yzVGeiBYg2uYhBAUAZKNDH8VnAPGhwhZeqBnofDPgw9PiVtTgk95k53Rd')"></a><br/>-->
 			<a class="btn keybase-label" href="https://keybase.io/namazso/"><i class="fa fa-keybase"></i></a><br/>
 			<a class="btn reddit-label" href="https://www.reddit.com/user/namazso"><i class="fa fa-reddit"></i></a><br/>
 			<a class="btn pgp-label" href="public.asc"><i class="fa fa-gnupg"></i></a><br/>
+			<h2>Public services</h2>
+			<a class="btn invidious-label" href="https://invidious.namazso.eu"></a><br/>
+			<a class="btn nitter-label" href="https://nitter.namazso.eu"></a><br/>
+			<a class="btn teddit-label" href="https://teddit.namazso.eu"></a><br/>
+			<a class="btn lufi-label" href="https://lufi.namazso.eu"></a><br/>
 		</nav>
 		<br/>
 	</body>
