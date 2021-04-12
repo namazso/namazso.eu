@@ -1,0 +1,17 @@
+# this file is used to control indexing of the various services. bots get 301'd here
+User-Agent: *
+
+# home / index
+Allow: /$
+Allow: /index.html
+
+Allow: /feed/popular
+Allow: /feed/trending
+Allow: /privacy
+Allow: /preferences
+Allow: /namazso
+Allow: /about
+Allow: /settings
+Allow: /files
+
+Disallow: /
