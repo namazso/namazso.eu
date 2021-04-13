@@ -182,6 +182,15 @@ h2{
 .lufi-label:hover:after{
     content:'lufi.namazso.eu';
 }
+.privatebin-label{
+    background-color: #e67a00;
+}
+.privatebin-label:after{
+    content:'Privatebin';
+}
+.privatebin-label:hover:after{
+    content:'bin.namazso.eu';
+}
 .privacy-label{
     background-color: #ff53f6;
 }
