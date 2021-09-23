@@ -110,6 +110,15 @@ h2{
 .monero-label:hover:after{
     content:' Click to open';
 }
+.buymeacoffee-label{
+    background-color: #f26822;
+}
+.buymeacoffee-label:after{
+    content:' buymeacoffee';
+}
+.buymeacoffee-label:hover:after{
+    content:' namazso';
+}
 .matrix-label{
     background-color: #292929;
 }
