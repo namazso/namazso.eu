@@ -34,6 +34,8 @@ h2{
 .badge{
     border-style: none;
     height: 32px;
+    font-size: 32px;
+    color: #000;
 }
 .btn{
     display:block;
@@ -111,7 +113,7 @@ h2{
     content:' Click to open';
 }
 .buymeacoffee-label{
-    background-color: #f26822;
+    background-color: #2e8b57;
 }
 .buymeacoffee-label:after{
     content:' buymeacoffee';
