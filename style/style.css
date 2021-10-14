@@ -208,3 +208,9 @@ h2{
 .privacy-label:after{
     content:'Privacy policy';
 }
+.uptime-label{
+    background-color: #00c700;
+}
+.uptime-label:after{
+    content:'Uptime';
+}
