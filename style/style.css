@@ -184,15 +184,6 @@ h2{
 .teddit-label:hover:after{
     content:'teddit.namazso.eu';
 }
-.lufi-label{
-    background-color: #00BCD4;
-}
-.lufi-label:after{
-    content:'Lufi';
-}
-.lufi-label:hover:after{
-    content:'lufi.namazso.eu';
-}
 .privatebin-label{
     background-color: #e67a00;
 }
