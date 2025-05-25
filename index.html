@@ -1,36 +1,268 @@
 <!DOCTYPE html>
-<html style="padding: 0; margin: 0; height: 100%;" lang="en">
+<html lang="en" dir="ltr">
 
 <head>
 	<meta charset="UTF-8">
-	<title>namazso</title>
-	<meta content="namazso" property="og:title" />
-	<!--<meta content="description" property="og:description" />-->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="namazso - Software developer, author of SecureUxTheme, OpenHashTab, PawnIO, and some other things.">
+	<meta name="keywords" content="namazso, namazso.eu, software developer, SecureUxTheme, OpenHashTab, PawnIO, GitHub, Mastodon, Twitter, Donate">
+	<meta name="author" content="namazso">
+
+	<meta property="og:url" content="https://namazso.eu/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="namazso">
+	<meta property="og:description" content="Software developer, author of SecureUxTheme, OpenHashTab, PawnIO, and some other things">
+	<meta property="og:image" content="https://namazso.eu/card.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="namazso.eu">
+	<meta property="twitter:url" content="https://namazso.eu/">
+	<meta name="twitter:title" content="namazso">
+	<meta name="twitter:description" content="Software developer, author of SecureUxTheme, OpenHashTab, PawnIO, and some other things">
+	<meta property="twitter:image" content="https://namazso.eu/card.png">
+
+	<link rel="canonical" href="https://namazso.eu">
 	<meta content="#00ff85" property="theme-color" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 	<link rel="stylesheet" href="style/fork-awesome.css">
-	<link rel="stylesheet" href="style/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+	<title>namazso</title>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "namazso",
+			"description": "Software developer, author of SecureUxTheme, OpenHashTab, PawnIO, and some other things",
+			"url": "https://namazso.eu/",
+			"sameAs": [
+				"https://github.com/namazso/",
+				"https://mastodon.cloud/@namazso",
+				"https://twitter.com/namazso"
+			],
+			"email": "admin@namazso.eu",
+			"knowsAbout": ["Software Development", "SecureUxTheme", "OpenHashTab", "PawnIO"],
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "https://namazso.eu/"
+			}
+		}
+	</script>
+	<style>
+		:root {
+			--primary-color: #00ff85;
+			--secondary-color: #00c2ff;
+			--text-color: #ffffff;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 800;
+			font-style: normal;
+
+			margin: 0;
+			color: white;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			background: linear-gradient(180deg, #00c2ff 0, #00ff85 100%, #00ff85 150%)  no-repeat fixed center;
+
+			font-size: 22px;
+			margin-inline-end: 0;
+		}
+
+		@keyframes fadeIn {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+
+		body > * {
+			animation: fadeIn 0.8s ease-out;
+		}
+
+		.content {
+			width: 100%;
+			max-width: 600pt;
+			padding: 0 50px 0;
+			display: table;
+			margin: 0 auto;
+		}
+
+		a {
+			color: #f5f24d;
+			text-decoration: unset;
+		}
+
+		h1 {
+			font-weight: 900;
+			font-size: 72px;
+			margin-bottom: 80px;
+		}
+
+		h2 {
+			font-weight: 900;
+		}
+
+		footer {
+			margin-top: 40px;
+		}
+
+		footer a {
+			margin-inline: 2px;
+		}
+
+		.badge {
+			border-style: none;
+			height: 32px;
+			font-size: 32px;
+			color: #000;
+		}
+
+		.btn {
+			position: relative;
+			border-radius: 90px;
+			letter-spacing: 1px;
+			margin: 0 auto 6px auto;
+			color: #ffffff;
+			width: 380px;
+			max-width: 90%;
+			display: block;
+			border: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			height: 48px;
+			line-height: 48px;
+			padding: 0 20px;
+			text-decoration: unset;
+			outline: 0;
+			font-size: 21px;
+			font-weight: 800;
+		}
+
+		.btn:hover:after {
+			color: #98fb98;
+		}
+
+		.bitcoin-label {
+			background-color: #f7931a;
+		}
+
+		.bitcoin-label:after {
+			content: ' Bitcoin';
+		}
+
+		.bitcoin-label:hover:after {
+			content: ' Click to open';
+		}
+
+		.email-label {
+			background-color: #2e8b57;
+		}
+
+		.email-label:after {
+			content: ' Mail';
+		}
+
+		.email-label:hover:after {
+			content: ' admin@namazso.eu';
+		}
+
+		.github-label {
+			background-color: #000000;
+		}
+
+		.github-label:after {
+			content: ' GitHub';
+		}
+
+		.github-label:hover:after {
+			content: ' namazso';
+		}
+
+		.twitter-label {
+			background-color: #1da1f2;
+		}
+
+		.twitter-label:after {
+			content: ' Twitter';
+		}
+
+		.twitter-label:hover:after {
+			content: ' @namazso';
+		}
+
+		.mastodon-label {
+			background-color: #595aff;
+		}
+
+		.mastodon-label:after {
+			content: ' Mastodon';
+		}
+
+		.mastodon-label:hover:after {
+			content: ' @namazso@mastodon.cloud';
+		}
+
+		.monero-label {
+			background-color: #f26822;
+		}
+
+		.monero-label:after {
+			content: ' Monero';
+		}
+
+		.monero-label:hover:after {
+			content: ' Click to open';
+		}
+
+		.buymeacoffee-label {
+			background-color: #2e8b57;
+		}
+
+		.buymeacoffee-label:after {
+			content: ' buymeacoffee';
+		}
+
+		.buymeacoffee-label:hover:after {
+			content: ' namazso';
+		}
+	</style>
 </head>
 
 <body>
-	<div class="actualbody">
+	<main class="content">
 		<h1>namazso</h1>
-		<br />
-		<nav>
-			<a class="btn github-label" href="https://github.com/namazso/"><i class="fa fa-github"></i></a><br />
-			<a class="btn mastodon-label" rel="me" href="https://mastodon.cloud/@namazso"><i class="fa fa-mastodon"></i></a><br />
-			<a class="btn twitter-label" href="https://twitter.com/namazso"><i class="fa fa-twitter"></i></a><br />
-			<a class="btn email-label" href="mailto:admin@namazso.eu"><i class="fa fa-envelope"></i></a><br />
+		<section>
+			<a class="btn github-label" rel="me noopener" href="https://github.com/namazso/" aria-label="GitHub"><i aria-hidden="true" class="fa fa-github"></i></a>
+			<a class="btn mastodon-label" rel="me noopener" href="https://mastodon.cloud/@namazso" aria-label="Mastodon"><i aria-hidden="true" class="fa fa-mastodon"></i></a>
+			<a class="btn twitter-label" rel="me noopener" href="https://twitter.com/namazso" aria-label="Twitter"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+			<a class="btn email-label" rel="me noopener" href="mailto:admin@namazso.eu" aria-label="E-mail"><i aria-hidden="true" class="fa fa-envelope"></i></a>
+		</section>
+		<section>
 			<h2>Donate</h2>
-			<a class="btn bitcoin-label" href="bitcoin:bc1qm8nn0t4w3e0wxelc3z8c8qkq6c0ysqhhq9ul4d"><i class="fa fa-bitcoin"></i></a><br />
-			<a class="btn monero-label" href="monero:88XvrxWAQEKDBwJ3U4DMdzYHS5vYs6Bf5hYzURCd8qzHZi1RDTE824i9tqEYudV4FWFeihurHU2vajNYAgh1hf8qPsvAHwK"><i class="fa fa-money"></i></a><br />
-			<a class="btn buymeacoffee-label" href="https://www.buymeacoffee.com/namazso"><i class="fa fa-buymeacoffee"></i></a><br />
-		</nav>
-		<br />
-		<br />
-		<a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/"><i class="fa fa-cc-zero badge"></i></a>&nbsp
-		<a href="https://github.com/namazso/namazso.eu/"><i class="fa fa-github-alt badge"></i></a>
-	</div>
+
+			<a class="btn bitcoin-label" rel="me noopener" href="bitcoin:bc1qm8nn0t4w3e0wxelc3z8c8qkq6c0ysqhhq9ul4d" aria-label="Bitcoin"><i aria-hidden="true" class="fa fa-bitcoin"></i></a>
+			<a class="btn monero-label" rel="me noopener" href="monero:88XvrxWAQEKDBwJ3U4DMdzYHS5vYs6Bf5hYzURCd8qzHZi1RDTE824i9tqEYudV4FWFeihurHU2vajNYAgh1hf8qPsvAHwK" aria-label="Monero"><i aria-hidden="true" class="fa fa-money"></i></a>
+			<a class="btn buymeacoffee-label" rel="me noopener" href="https://www.buymeacoffee.com/namazso" aria-label="buymeacoffee"><i aria-hidden="true" class="fa fa-buymeacoffee"></i></a>
+		</section>
+	</main>
+	<footer>
+		<a rel="license noopener" href="https://creativecommons.org/publicdomain/zero/1.0/" aria-label="Creative Commons Zero"><i aria-hidden="true" class="fa fa-cc-zero badge"></i></a>
+		<a rel="noopener" href="https://github.com/namazso/namazso.eu/" aria-label="Source"><i aria-hidden="true" class="fa fa-github-alt badge"></i></a>
+	</footer>
 </body>
 
 </html>
